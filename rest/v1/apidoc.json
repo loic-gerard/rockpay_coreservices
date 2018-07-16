@@ -1,0 +1,14 @@
+{
+  "name": "API Wolfweb",
+  "version": "1.0.0",
+  "description": "API REST pour les applications en ligne de la maison Wolfberger",
+  "title": "API Wolfweb - Documentation",
+  "url" : "http://wolfweb.diatem.test/rest/v1/",
+  "header": {
+    "title": "Introduction",
+    "filename": "_doc/header.md"
+  },
+  "template": {
+  	"forceLanguage": "fr"
+  }
+}

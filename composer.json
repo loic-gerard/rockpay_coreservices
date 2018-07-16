@@ -1,0 +1,19 @@
+{
+    "name": "kodo/kodo_coreservices",
+    "type": "project",
+    "require": {
+        "diatem-net/restserver": "^1",
+        "diatem-net/apidocparser": "^1",
+        "diatem-net/jin-db" : "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Loic Gerard",
+            "email": "lgerard@diatem.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"KodoCore\\v1\\": "rest/v1/api/"}
+    }
+}

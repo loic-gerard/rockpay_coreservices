@@ -1,0 +1,18 @@
+# Activons le "RewriteEngine" pour pouvoir 
+# utiliser les "RewriteRule" et "RewriteCond"
+RewriteEngine on
+
+# Ensuite, vérifions que nous sommes bien sur 
+# mathieupeloquin.com ou www.mathieupeloquin.com
+# et dans le sous-dossier voulu.
+RewriteCond %{REQUEST_URI} !^/rest/
+
+# Vérifions si la personne a tapé le nom d'un
+# fichier ou dossier existant (dans ce cas, nous
+# ne voulons pas ré-écrire la requête...)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Maintenant que toutes les conditions ont été
+# rencontrées, on redirige vers le bon sous-dossier
+RewriteRule ^(.*)$ /rest/doc/
